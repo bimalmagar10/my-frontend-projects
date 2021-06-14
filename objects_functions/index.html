@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Objects and Functions</title>
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="top">
+		<div class="budget">
+			<div class="budget__title">
+				Available budget in <span class="budget__title--month">%date%</span>:
+			</div>
+			<div class="budget__value">+ Rs. 00.00</div>
+			<div class="budget__income">
+				<div class="budget__income--text">Income</div>
+				<div class="right">
+					<div class="budget__income--value">+ Rs. 4,300.00</div>
+				</div>
+			</div>
+			<div class="budget__expenses">
+				<div class="budget__expenses--text">Expenses</div>
+				<div class="right">
+					<div class="budget__expenses--value">- Rs. 1,954.00</div>
+					<div class="budget__expenses--percentage">45%</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="add">
+			<div class="add__container">
+				<select class="add__type">
+					<option value="inc" selected>+</option>
+					<option value="exp">-</option>
+				</select>
+				<input type="text" class="add__description" placeholder="Add Description" required/>
+				<input type="number" class="add__value" placeholder="Value" required/>
+				<button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+			</div>	
+		</div>
+		<div class="container">
+			<div class="income">
+				<h2 class="income__title">Income</h2>
+				<div class="income__list">
+<!-- 					<div class="item" id="income-0">
+						<div class="item__description">Salary</div>
+						<div class="right">
+							<div class="item__value">+ Rs. 2,100.00</div>
+							<div class="item__percentage">30%</div>
+							<div class="item__delete">
+								<button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="item" id="income-1">
+						<div class="item__description">Sold Car</div>
+						<div class="right">
+							<div class="item__value">+ Rs. 20,000.00</div>
+							<div class="item__percentage">20%</div>
+							<div class="item__delete">
+								<button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div class="expenses">
+				<h2 class="expenses__title">Expenses</h2>
+				<div class="expenses__list">
+<!-- 					<div class="item" id="expense-0">
+						<div class="item__description">Apartment Rent</div>
+						<div class="right">
+							<div class="item__value">- Rs. 900.00</div>
+							<div class="item__percentage">21%</div>
+							<div class="item__delete">
+								<button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="item" id="expense-0">
+						<div class="item__description">Purchase Bicycle</div>
+						<div class="right">
+							<div class="item__value">- Rs. 9,000.00</div>
+							<div class="item__percentage">45%</div>
+							<div class="item__delete">
+								<button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="ionicons.min.css" type="text/css">
+	<script src="app.js"></script>	
+</body>
+</html>
